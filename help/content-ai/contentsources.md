@@ -23,7 +23,7 @@ Questa guida illustra come configurare le origini di IA per la gestione dei cont
 Prima di iniziare, verifichi che siano soddisfatte le seguenti condizioni:
 
 * Hai un programma Cloud Manager attivo con almeno un ambiente AEM as a Cloud Service.
-* Hai il ruolo di **[Amministratore di sistema](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-admin-console/admin-roles)** in Admin Console per il programma.
+* Hai il ruolo di **[Amministratore di sistema](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-admin-console/admin-roles)** in Admin Console per il programma.
 * È stato eseguito il provisioning del profilo di prodotto dell&#39;ambiente in **Adobe Admin Console**. Vedere [Configurare un progetto Adobe Developer Console](setup-adc-project.md).
 
 ## Passaggio 1: aprire la scheda di configurazione IA per la gestione dei contenuti {#open-tab}
