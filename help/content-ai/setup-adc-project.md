@@ -47,7 +47,7 @@ AEM Content AI Services supporta due metodi di autenticazione. Scegli quello che
 
    >[!NOTE]
    >
-   >Se la scheda API è disabilitata e viene visualizzato il messaggio &quot;Licenza richiesta&quot;, l’ambiente AEM as a Cloud Service potrebbe non essere modernizzato. Consulta [Modernizzazione dell&#39;ambiente AEM as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup#modernization-of-aem-as-a-cloud-service-environment).
+   >Se la scheda API è disabilitata e viene visualizzato il messaggio &quot;Licenza richiesta&quot;, l’ambiente AEM as a Cloud Service potrebbe non essere modernizzato. Consulta [Modernizzazione dell&#39;ambiente AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup#modernization-of-aem-as-a-cloud-service-environment).
 
 1. Nella finestra di dialogo **[!UICONTROL Configura API]**, selezionare **[!UICONTROL Autenticazione da server a server]**.
 
