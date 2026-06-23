@@ -27,7 +27,7 @@ Prima di iniziare, verifica quanto segue:
 * Hai accesso a [Adobe Developer Console](https://developer.adobe.com/console/) per la tua organizzazione.
 * Sei stato aggiunto come **Sviluppatore** nel profilo di prodotto di AEM Content AI Services in **Adobe Admin Console**. Senza questo ruolo, la scheda API **[!UICONTROL AEM Content AI Services]** risulta disabilitata e l&#39;opzione di autenticazione **[!UICONTROL Server-to-Server]** è nascosta.
 * Si conoscono i numeri del programma e dell&#39;ambiente per il profilo di prodotto che si desidera selezionare (ad esempio, `AEM User - publish - Program 12345 - Environment 67890`).
-* Hai il ruolo di **[Amministratore di sistema](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-admin-console/admin-roles)** in Admin Console per il programma. Questo ruolo consente di gestire i profili di prodotto e assegnare gli utenti all’ambiente.
+* Hai il ruolo di **[Amministratore di sistema](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-admin-console/admin-roles)** in Admin Console per il programma. Questo ruolo consente di gestire i profili di prodotto e assegnare gli utenti all’ambiente.
 
 ## Scegli un metodo di autenticazione {#choose-auth}
 
@@ -48,7 +48,7 @@ AEM Content AI Services supporta due metodi di autenticazione. Scegli quello che
 
    >[!NOTE]
    >
-   >Se la scheda API è disabilitata e viene visualizzato il messaggio &quot;Licenza richiesta&quot;, l’ambiente AEM as a Cloud Service potrebbe non essere modernizzato. Consulta [Modernizzazione dell&#39;ambiente AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup#modernization-of-aem-as-a-cloud-service-environment).
+   >Se la scheda API è disabilitata e viene visualizzato il messaggio &quot;Licenza richiesta&quot;, l’ambiente AEM as a Cloud Service potrebbe non essere modernizzato. Consulta [Modernizzazione dell&#39;ambiente AEM as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup#modernization-of-aem-as-a-cloud-service-environment).
 
 1. Nella finestra di dialogo **[!UICONTROL Configura API]**, selezionare **[!UICONTROL Autenticazione da server a server]**.
 
