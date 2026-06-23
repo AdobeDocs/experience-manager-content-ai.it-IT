@@ -6,9 +6,9 @@ role: Developer, Admin
 level: Beginner
 solution: Experience Manager
 keywords: IA per la gestione dei contenuti di AEM, panoramica, origine di contenuto, ricerca semantica, acquisizione, Cloud Manager
-source-git-commit: 9b3c63be1aa95339086ee5994cd4dd7cdfa7e746
+source-git-commit: 2ff1bbdd3ff224e2a6b389243c78af5fd228d5ee
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ IA per la gestione dei contenuti di AEM è strutturata come uno stack a quattro 
 
 *Leggi lo stack dal basso verso l&#39;alto, dal contenuto attendibile alla base alle esperienze agente che gestisce nella parte superiore.*
 
-1. Sorgenti di IA per la gestione dei contenuti
+1. Origini IA per la gestione dei contenuti
 Le origini di contenuto sono entità gestite in IA per la gestione dei contenuti di AEM che si connettono a un corpo di contenuto attendibile. Un Content Source può fare riferimento a un tipo di contenuto gestito da AEM come risorse, frammenti di contenuto, pagine, moduli, metadati e tassonomie, nonché a origini non AEM come siti web di terze parti, knowledge base o portali di documentazione. Ogni Source di contenuti viene vettorizzato automaticamente e arricchito semanticamente per il recupero dell’alimentazione, la messa a terra e le esperienze di IA conversazionale. Definisci le origini di contenuto una volta e riutilizzale in tutte le API di IA per la gestione dei contenuti con aggiornamenti e aggiornamenti automatici incorporati.
 
 1. Content AI Foundation Services
@@ -67,7 +67,7 @@ Per arrivare a un’integrazione di IA per la gestione dei contenuti funzionante
 
 ### &#x200B;2. Controllare le origini di IA per la gestione dei contenuti {#control}
 
-Imposta e gestisci le origini di IA per la gestione dei contenuti per abilitare le esperienze basate sull&#39;intelligenza artificiale. Consulta [Controllare le origini di contenuto](contentsources.md).
+Imposta e gestisci le origini di IA per la gestione dei contenuti per abilitare le esperienze basate sull&#39;intelligenza artificiale. Per ulteriori informazioni, consulta [Controllare le origini di contenuto](contentsources.md).
 
 ## Scopri le API di IA per la gestione dei contenuti  {#apis}
 
