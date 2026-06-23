@@ -6,9 +6,9 @@ role: Developer, Admin
 level: Beginner
 solution: Experience Manager
 keywords: IA per la gestione dei contenuti di AEM, origini di IA per la gestione dei contenuti, acquisizione, Cloud Manager, Adobe Developer Console
-source-git-commit: 86c0b8b910583701dc4bd42b61e082cc5429cee8
+source-git-commit: 2ff1bbdd3ff224e2a6b389243c78af5fd228d5ee
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '1225'
 ht-degree: 1%
 
 ---
@@ -23,8 +23,42 @@ Questa guida illustra come configurare le origini di IA per la gestione dei cont
 Prima di iniziare, verifichi che siano soddisfatte le seguenti condizioni:
 
 * Hai un programma Cloud Manager attivo con almeno un ambiente AEM as a Cloud Service.
-* Hai il ruolo di **[Amministratore di sistema](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-admin-console/admin-roles)** in Admin Console per il programma.
-* È stato eseguito il provisioning del profilo di prodotto dell&#39;ambiente in **Adobe Admin Console**. Vedere [Configurare un progetto Adobe Developer Console](setup-adc-project.md).
+* L&#39;utente è assegnato al profilo di prodotto **Utenti AEM** per l&#39;ambiente di destinazione, che consente all&#39;utente di visualizzare le origini di contenuto.
+* L&#39;utente è assegnato al profilo di prodotto **Amministratori AEM** per l&#39;ambiente di destinazione, che consente all&#39;utente di creare e modificare origini di contenuto. L&#39;accesso a Cloud Manager da solo non è sufficiente. Vedere [Assegnare un utente a un profilo di prodotto AEM](#assign-product-profile).
+* È stato eseguito il provisioning del profilo di prodotto dell&#39;ambiente in **Adobe Admin Console**.
+
+## Assegnare un utente a un profilo di prodotto AEM {#assign-product-profile}
+
+Utilizzare questa procedura per concedere a un utente l&#39;accesso a [!DNL Adobe Experience Manager] as a Cloud Service per un ambiente specifico. Assegna il profilo corrispondente all’accesso richiesto dall’utente:
+
+* **[!UICONTROL Utenti AEM]** - visualizza origini di contenuto.
+* **[!UICONTROL Amministratori AEM]**: crea e modifica origini di contenuto.
+
+>[!NOTE]
+>
+>Gli utenti devono appartenere a un profilo di prodotto AEM, ad esempio **[!UICONTROL Utenti AEM]** o **[!UICONTROL Amministratori AEM]** per accedere ad AEM. L’accesso a Cloud Manager da solo non è sufficiente.
+
+Per assegnare questi profili, devi essere un amministratore di sistema con il profilo di prodotto Cloud Manager [!UICONTROL Proprietario business]. Assicurati che il nome e l’indirizzo e-mail dell’utente siano pronti.
+
+1. In [Cloud Manager](https://my.cloudmanager.adobe.com/), passa al programma e seleziona **[!UICONTROL Gestisci accesso]** per l&#39;ambiente di destinazione. Viene aperta una nuova scheda [!DNL Adobe Admin Console] per tale ambiente.
+1. Seleziona il profilo di prodotto **[!UICONTROL Utenti AEM]** o **[!UICONTROL Amministratori AEM]** per il livello **publish**, ad esempio `AEM Administrators - publish - Program 12345 - Environment 67890`. IA per la gestione dei contenuti indicizza i contenuti pubblicati, pertanto il profilo deve essere assegnato a livello di pubblicazione, non di authoring.
+1. Selezionare **[!UICONTROL Aggiungi utente]**.
+1. Inserisci il nome e l’indirizzo e-mail dell’utente, quindi salva la modifica. L’utente viene aggiunto al profilo di prodotto.
+
+Ripeti questi passaggi per ogni ambiente a cui l’utente deve accedere, ad esempio sviluppo, staging o produzione.
+
+>[!CAUTION]
+>
+>Non modificare o eliminare i profili di prodotto predefiniti denominati **[!UICONTROL Amministratori AEM]** o **[!UICONTROL Utenti AEM]**. La ridenominazione di **[!UICONTROL Amministratori AEM]** comporta la rimozione dei diritti di amministratore da tutti gli utenti a esso assegnati.
+
+### Verifica l’assegnazione {#verify-assignment}
+
+Per verificare che l&#39;assegnazione sia riuscita:
+
+1. In [!DNL Admin Console], riapri il profilo di prodotto assegnato.
+1. Verificare che l&#39;utente sia visualizzato nell&#39;elenco dei membri.
+
+Se stai cercando di risolvere i problemi di accesso o token, verifica che l’utente sia aggiunto direttamente al profilo di prodotto e non solo tramite un gruppo.
 
 ## Passaggio 1: aprire la scheda di configurazione IA per la gestione dei contenuti {#open-tab}
 
