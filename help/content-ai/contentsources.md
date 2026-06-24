@@ -6,9 +6,9 @@ role: Developer, Admin
 level: Beginner
 solution: Experience Manager
 keywords: IA per la gestione dei contenuti di AEM, origini di IA per la gestione dei contenuti, acquisizione, Cloud Manager, Adobe Developer Console
-source-git-commit: 2ff1bbdd3ff224e2a6b389243c78af5fd228d5ee
+source-git-commit: d40fcb4a41c717ef4e6c82d95a36976b1f4de825
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1276'
 ht-degree: 1%
 
 ---
@@ -96,11 +96,13 @@ Un’origine di contenuto definisce il sito web scansionato e indicizzato da IA 
 
    ![Elenco a discesa della frequenza di aggiornamento con le opzioni disponibili](../assets/content-ai-onboarding-step-5-1.png)
 
-1. Selezionare **[!UICONTROL Crea Source]**.
+1. Selezionare **[!UICONTROL Crea Source]**. L&#39;acquisizione viene avviata automaticamente e l&#39;origine viene spostata in **Indicizzazione**.
 
-## Passaggio 3: attivare l’acquisizione {#trigger-acquisition}
+   ![Elenco origini di contenuto che mostra l&#39;origine appena creata nello stato di indicizzazione](../assets/content-ai-onboarding-step-6.png)
 
-Dopo la creazione dell&#39;origine, lo stato è **Nuovo**. Esegui un&#39;acquisizione iniziale per avviare l&#39;indicizzazione.
+## Passaggio 3: rieseguire l’acquisizione {#trigger-acquisition}
+
+L&#39;acquisizione viene eseguita automaticamente quando si crea un&#39;origine e quindi secondo la pianificazione impostata dalla **[!UICONTROL frequenza di aggiornamento]**. Puoi anche attivare manualmente un’esecuzione in qualsiasi momento, ad esempio per reindicizzare immediatamente dopo la pubblicazione di nuovo contenuto.
 
 1. Nell&#39;elenco di origine, seleziona l&#39;icona **altre azioni** (...) accanto all&#39;origine, quindi seleziona **[!UICONTROL Attiva acquisizione]**.
 
@@ -116,7 +118,7 @@ Dopo l’avvio dell’acquisizione, lo stato dell’origine viene aggiornato in 
 
 | Stato | Significato |
 | --- | --- |
-| **Nuovo** | Source creato; non è ancora stata eseguita alcuna acquisizione. |
+| **Nuovo** | Source appena creato; l&#39;acquisizione automatica non è ancora iniziata. Questo stato è breve. |
 | **Indicizzazione** | Acquisizione in corso; il contenuto viene scansionato e indicizzato. |
 | **Disponibile** | Indicizzazione completata. L’origine è pronta per elaborare le query di ricerca. |
 
@@ -130,15 +132,17 @@ Attendi che lo stato raggiunga **Disponibile** prima di cercare nell&#39;indice 
 
 Una volta che lo stato dell&#39;origine è **Disponibile**, è possibile eseguire query di ricerca direttamente da Cloud Manager per verificare che il contenuto sia stato indicizzato correttamente.
 
-1. Nell&#39;elenco delle origini, seleziona **[!UICONTROL Cerca]** accanto all&#39;origine.
+1. Nell&#39;elenco delle origini selezionare l&#39;icona **cerca** (lente di ingrandimento) accanto all&#39;origine.
 
-   ![Elenco origini di contenuto con il pulsante Cerca evidenziato in un&#39;origine disponibile](../assets/content-ai-onboarding-step-13.png)
+   ![Elenco origini di contenuto con l&#39;icona di ricerca evidenziata in un&#39;origine disponibile](../assets/content-ai-onboarding-step-13.png)
 
 1. Immettere una query nel campo di ricerca. I risultati mostrano un elenco di elementi corrispondenti con un punteggio di corrispondenza e un tipo di contenuto (ad esempio, **PAGINA** o **PDF**). Selezionando un risultato si apre un&#39;anteprima a destra.
 
    ![Pannello di ricerca con una query, risultati corrispondenti con punteggi corrispondenti e un riquadro di anteprima per il primo risultato](../assets/content-ai-onboarding-step-14.png)
 
 ## Modificare o eliminare un Source {#modify-source}
+
+### Modificare un’origine {#modify}
 
 Per aggiornare una configurazione di origine dopo che è stata creata:
 
@@ -148,15 +152,19 @@ Per aggiornare una configurazione di origine dopo che è stata creata:
 
 1. Nella finestra di dialogo **[!UICONTROL Modifica Source di IA per la gestione dei contenuti]**, aggiorna **[!UICONTROL Descrizione]**, **[!UICONTROL Indirizzo sito Web]**, **[!UICONTROL Escludi URL]** o **[!UICONTROL Frequenza di aggiornamento]** in base alle esigenze. Il nome di configurazione di **[!UICONTROL IA per la gestione dei contenuti]** è di sola lettura e non può essere modificato.
 
-1. Seleziona **[!UICONTROL Salva]** per applicare le modifiche, oppure seleziona **[!UICONTROL Elimina]** nella parte inferiore sinistra della finestra di dialogo per rimuovere completamente l&#39;origine.
+   ![Finestra di dialogo Modifica Source di IA per la gestione dei contenuti con i campi modificabili evidenziati](../assets/content-ai-onboarding-step-12.png)
+
+1. Seleziona **[!UICONTROL Salva]** per applicare le modifiche. L’elenco delle sorgenti viene aggiornato in base alle modifiche apportate.
+
+### Eliminare un’origine {#delete}
+
+1. Nell&#39;elenco di origine, seleziona l&#39;icona **altre azioni** (...) accanto all&#39;origine, quindi seleziona **[!UICONTROL Elimina]**.
 
    >[!WARNING]
    >
    >L’eliminazione di un’origine è permanente. Tutto il contenuto indicizzato per tale origine viene rimosso e non può più essere utilizzato per le query di ricerca.
 
-   ![Finestra di dialogo Modifica Source di IA per la gestione dei contenuti con i campi modificabili evidenziati e un pulsante Elimina in basso a sinistra](../assets/content-ai-onboarding-step-12.png)
-
-L’elenco delle sorgenti viene aggiornato in base alle modifiche apportate. Se hai eliminato l’origine, questa non viene più visualizzata nell’elenco.
+Dopo l’eliminazione, l’origine non viene più visualizzata nell’elenco.
 
 ## Passaggi successivi {#next-steps}
 
