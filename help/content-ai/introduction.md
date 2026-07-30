@@ -7,9 +7,9 @@ level: Beginner
 solution: Experience Manager
 keywords: IA per la gestione dei contenuti di AEM, panoramica, origine contenuti, ricerca semantica, acquisizione, Cloud Manager
 source-git-commit: 2ff1bbdd3ff224e2a6b389243c78af5fd228d5ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '885'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 75%
 
 ## Contenuti intelligenti, progettati per l’IA {#ai-ready}
 
-I clienti iniziano a incontrare i marchi tramite l’intelligenza artificiale prima di incontrare un sito web. Assistenti di chat, panoramiche dell’intelligenza artificiale, agenti, ricerca conversazionale, conferenze di intelligenza artificiale: tutti recuperano, riepilogano e rappresentano i contenuti del brand per conto del brand. Ciò che dicono è accurato, attuale e on-brand tanto quanto il contenuto che possono raggiungere.
-Questo è il turno in cui IA per i contenuti di AEM è creata per. Tratta i contenuti del brand come la verità fondamentale su cui si basano le esperienze AI, e offre ai clienti di AEM gli strumenti per creare tale verità fondamentale più rapidamente dal lato dell’autore e distribuirla in modo chiaro alle esperienze basate sull’intelligenza artificiale per i consumatori dal lato della pubblicazione.
+Le persone iniziano a conoscere i brand tramite l’IA prima ancora di visitare un sito web. Assistenti di chat, panoramiche IA, agenti, ricerca conversazionale, concierge basati su IA: tutti recuperano, riepilogano e rappresentano i contenuti del brand per conto dello stesso. Ciò che dicono è accurato, attuale e in linea con il brand solo nella misura in cui lo sono i contenuti a cui riescono ad accedere.
+Questo è il cambiamento per cui è stata progettata l’IA per la gestione dei contenuti di AEM. Considera i contenuti del brand come la base su cui si fondano le esperienze di IA e garantisce alla clientela AEM gli strumenti per creare tale base più rapidamente dal lato dell’autore e per fornirla in modo chiaro per le esperienze basate sull’IA rivolte ai consumatori quando si è nella fase di pubblicazione.
 
 **Dal lato dell’autore**, l’IA per la gestione dei contenuti di AEM basa la creazione dei contenuti su origini del brand approvate. L’authoring basato sull’IA, la ricerca in linguaggio naturale tra i contenuti delle pagine esistenti, i frammenti e le risorse, nonché la generazione di contenuti in base al brand consentono ai team di produrre varianti destinate a nuovi tipi di pubblico, regioni e canali senza uscire da AEM e senza discostarsi da quanto già approvato.
 
@@ -27,11 +27,11 @@ Questo è il turno in cui IA per i contenuti di AEM è creata per. Tratta i cont
 
 ### Cosa significa per la clientela di AEM {#what-it-means}
 
-Il contenuto approvato è la difesa del marchio contro le allucinazioni. Quando l’intelligenza artificiale si basa su contenuti AEM gestiti, per impostazione predefinita le risposte rimangono precise, attuali e sul marchio.
-L’authoring tiene il passo con la domanda dell’era dell’intelligenza artificiale. I team generano copie e immagini per più tipi di pubblico e momenti nell’esperienza di authoring, attingendo da origini approvate anziché lasciarle vuote.
-La scoperta funziona come le persone e le macchine chiedono. La ricerca basata su intento in linguaggio naturale per risorse, frammenti, pagine e moduli trasforma il contenuto esistente in una risorsa riutilizzabile.
-Personalization è scalabile tramite il riutilizzo, non la duplicazione. I componenti gestiti si ricombinano in varianti invece di moltiplicarsi in copie non tracciate.
-I canali di pubblicazione ora includono superfici AI. Il contenuto viene distribuito in forme che gli esseri umani, gli agenti e le esperienze mediate dall’intelligenza artificiale possono utilizzare, senza pipeline separate per ciascuno di essi.
+I contenuti approvati sono la difesa del brand contro le allucinazioni. Quando l’IA si basa su contenuti AEM controllati, le risposte rimangono accurate, aggiornate e in linea con il brand per impostazione predefinita.
+L’authoring tiene il passo con la domanda dell’era dell’IA. I team generano testi e immagini per un pubblico più ampio e per diversi contesti direttamente dall’esperienza di authoring, attingendo da origini approvate anziché partire da zero.
+La ricerca funziona nel modo in cui le persone e le macchine effettivamente formulano le domande. La ricerca in linguaggio naturale e basata sull’intento tra risorse, frammenti, pagine e moduli trasforma i contenuti esistenti in una riserva riutilizzabile.
+La personalizzazione si espande attraverso il riutilizzo, non la duplicazione. I componenti gestiti si ricombinano in varianti invece di moltiplicarsi in copie non tracciate.
+I canali di pubblicazione ora includono superfici IA. I contenuti vengono forniti in formati che possono essere fruiti da persone, agenti ed esperienze mediate dall’IA, senza pipeline separate per ciascuno di essi.
 
 **Il punto fondamentale è che i contenuti dei brand affidabili già esistenti hanno oggi più valore che mai. Ogni frammento, risorsa e pagina approvati già presenti in AEM costituiscono la base su cui si fondano le esperienze basate sull’IA; l’IA per la gestione dei contenuti di AEM è ciò che rende tale libreria riutilizzabile, facilmente reperibile e pronta a dare vita alle novità future.**
 
@@ -67,8 +67,8 @@ Per ottenere un’integrazione funzionante dell’IA per la gestione dei contenu
 
 ### &#x200B;2. Verificare le origini dell’IA per la gestione dei contenuti {#control}
 
-Imposta e gestisci le origini di IA per la gestione dei contenuti per abilitare le esperienze basate sull&#39;intelligenza artificiale. Per ulteriori informazioni, consulta [Controllare le origini di contenuto](contentsources.md).
+Configura e gestisci le origini IA per la gestione dei contenuti per abilitare le esperienze basate sull’IA. Consulta [Verificare le origini dei contenuti](contentsources.md).
 
 ## Informazioni sulle API dell’IA per la gestione dei contenuti  {#apis}
 
-Esplora l’ampiezza funzionale dell’IA per la gestione dei contenuti di AEM: le API mostrano tutto il potenziale della piattaforma. Consulta [API di IA per la gestione dei contenuti](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/contentai/).
+Esplora l’ampiezza funzionale dell’IA per la gestione dei contenuti di AEM: le API mostrano tutto il potenziale della piattaforma. Consulta [API dell’IA per la gestione dei contenuti](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/contentai/).

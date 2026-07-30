@@ -7,9 +7,9 @@ level: Beginner
 solution: Experience Manager
 keywords: IA per la gestione dei contenuti di AEM, Adobe Developer Console, autenticazione, da server a server, chiave API, token di accesso
 source-git-commit: 2ff1bbdd3ff224e2a6b389243c78af5fd228d5ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '714'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Prima di iniziare, assicurati di disporre dei seguenti prerequisiti:
 * Avere accesso ad [Adobe Developer Console](https://developer.adobe.com/console/) per la tua organizzazione.
 * Essere stato aggiunto come **Sviluppatore** nel profilo di prodotto di AEM Content AI Services in **Adobe Admin Console**. Senza questo ruolo, la scheda API **[!UICONTROL AEM Content AI Services]** risulta disabilitata e l’opzione di autenticazione **[!UICONTROL Da server a server]** è nascosta.
 * Conoscere i numeri del programma e dell’ambiente per il profilo di prodotto che si desidera selezionare (ad esempio `AEM User - publish - Program 12345 - Environment 67890`).
-* Hai il ruolo di **[Amministratore di sistema](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-admin-console/admin-roles)** in Admin Console per il programma. Questo ruolo consente di gestire i profili di prodotto e assegnare gli utenti all’ambiente.
+* Hai il ruolo di **[Amministratore di sistema](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-admin-console/admin-roles)** in Admin Console per il programma. Con questo ruolo puoi gestire i profili di prodotto e assegnare gli utenti all’ambiente.
 
 ## Scegliere un metodo di autenticazione {#choose-auth}
 
