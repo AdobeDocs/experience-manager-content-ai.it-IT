@@ -5,9 +5,9 @@ user-guide-description: IA per la gestione dei contenuti di Experience Manager
 solution: Experience Manager
 nudge: true
 source-git-commit: 4d7c01ef3d71b1f8fe458960e5b7e37c78c647c0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '34'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -17,5 +17,5 @@ ht-degree: 79%
 + [Introduzione](introduction.md)
 + [Verificare le origini dei contenuti](contentsources.md)
 + [Configurare un progetto in Adobe Developer Console](setup-adc-project.md)
-+ [Introduzione alla Ricerca IA dei contenuti di AEM](site-search.md)
++ [Introduzione alla ricerca con il servizio IA gestione contenuti di AEM](site-search.md)
 
