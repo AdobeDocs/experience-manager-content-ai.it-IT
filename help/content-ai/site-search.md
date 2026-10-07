@@ -6,35 +6,33 @@ role: Developer, Admin
 level: Beginner
 solution: Experience Manager
 keywords: IA gestione contenuti di AEM, Ricerca con IA gestione contenuti di AEM, GenSearch, Ricerca rapida, Origini IA gestione contenuti, Acquisizione, Cloud Manager
-source-git-commit: 51fa66b5ac0ef77e438db76530788826da65f91e
-workflow-type: ht
-source-wordcount: '1487'
-ht-degree: 100%
-
+source-git-commit: d8bd542a6a2d7e467b0d50e022f1e019d6f5b5ff
+workflow-type: tm+mt
+source-wordcount: '1458'
+ht-degree: 77%
 ---
-
 
 # Introduzione alla ricerca con il servizio IA gestione contenuti di AEM
 
-La ricerca tradizionale nel sito confronta le parole digitate da chi visita il sito con quelle presenti nel contenuto. Questo funziona bene se nella ricerca viene utilizzata la stessa terminologia usata nei contenuti, ma non se si fanno delle domande, si esprime un intento o semplicemente si utilizzano termini diversi. La ricerca è uno dei segnali più chiari dell’intento dei visitatori su un sito, e una ricerca che non produce alcun risultato spesso determina il fallimento di un percorso: i contenuti non vengono trovati, il coinvolgimento cala e si perdono potenziali conversioni. Sempre più spesso, le persone si aspettano che la ricerca “comprenda” ciò che intendono dire, non solo ciò che hanno digitato; è proprio questa base di comprensione dell’intento che rende possibili, in primo luogo, le risposte generative.
+La ricerca tradizionale nel sito confronta le parole digitate da chi visita il sito con quelle presenti nel contenuto. Questo funziona bene quando i visitatori utilizzano la stessa terminologia del contenuto. Non funziona quando si pone una domanda, si esprime un intento o si esprimono le cose in modo diverso. La ricerca è uno dei segnali più chiari dell’intento dei visitatori su un sito, e una ricerca che non produce alcun risultato spesso determina il fallimento di un percorso: i contenuti non vengono trovati, il coinvolgimento cala e si perdono potenziali conversioni. I visitatori si aspettano sempre di più che la ricerca comprenda il loro significato, non solo quello che hanno digitato. La stessa base consapevole delle intenzioni rende possibili anche risposte generative.
 
 La ricerca tramite il serivizio IA gestione contenuti di AEM non sostituisce l’esperienza di ricerca del tuo sito, ma la fa evolvere: dalla semplice corrispondenza delle parole chiave alla comprensione del significato e dell’intento, fino a rispondere direttamente alle domande. La ricerca semantica aggiunge il recupero basato sull’intento all’esperienza di ricerca esistente, mettendo in evidenza contenuti pertinenti anche quando una query non corrisponde esattamente alla formulazione del contenuto. La ricerca generativa si basa su quella stessa struttura di recupero per produrre risposte contestualizzate e generate, fondate sui contenuti del tuo sito: si tratta di un passo in più e non corrisponde quindi al recupero semantico.
 
-Per chi visita il tuo sito, offre maggiore pertinenza, il supporto di un linguaggio naturale, un minor numero di ricerche senza risultati e risposte più rapide. Per la tua azienda, ciò significa una migliore corrispondenza dell’intento di ricerca, una maggiore visibilità dei contenuti e una base di ricerca pronta per l’IA, senza dover ricostruire da zero la tua esperienza di ricerca. E per il tuo team si tratta di un aggiornamento graduale: il componente di ricerca esistente può passare, passo dopo passo, da funzionalità lessicali a semantiche e infine a generative, senza richiedere un’implementazione completamente nuova.
+Per chi visita il tuo sito, offre maggiore pertinenza, il supporto di un linguaggio naturale, un minor numero di ricerche senza risultati e risposte più rapide. Per la tua azienda, ciò significa una migliore corrispondenza dell’intento di ricerca, una maggiore visibilità dei contenuti e una base di ricerca pronta per l’IA, senza dover ricostruire da zero la tua esperienza di ricerca. Per il tuo team si tratta di un aggiornamento incrementale: il componente di ricerca esistente può passare gradualmente da funzionalità lessicali, semantiche a generative, anziché richiedere una nuova implementazione.
 
-Per raggiungere questo obiettivo occorre prendere due decisioni: in che modo i contenuti vengono inseriti nell’IA per la gestione dei contenuti e quale componente li presenta ai visitatori. Collega i contenuti, quindi aggiungi un componente di ricerca a una pagina: il tuo sito sarà così pronto a fornire ai visitatori i risultati più pertinenti e le risposte basate sul loro intento.
+A tal fine, prendi due decisioni: come il contenuto entra in IA per la gestione dei contenuti e quale componente lo porta ai visitatori. Per fornire ai visitatori risultati rilevanti e risposte basate sulle finalità, collega il contenuto, quindi aggiungi un componente di ricerca a una pagina.
 
 ## Prerequisiti {#prerequisites}
 
 Prima di iniziare, verifica che siano soddisfatte le seguenti condizioni:
 
 * Disponi di un programma Cloud Manager attivo con almeno un ambiente AEM as a Cloud Service.
-* Il tuo utente è assegnato ai profili di prodotto **[!UICONTROL Utenti AEM]** (per visualizzare le origini dei contenuti) e/o **[!UICONTROL Amministratori AEM]** (per crearle e modificarle), assegnati al livello di **pubblicazione**: l’IA per la gestione dei contenuti indicizza i contenuti pubblicati, non quelli creati. Per la procedura completa, consulta [Assegnare un utente a un profilo di prodotto AEM](contentsources.md#assign-product-profile).
+* Il tuo utente è assegnato al profilo di prodotto **[!UICONTROL Utenti AEM]** (per visualizzare le origini di contenuto) e/o **[!UICONTROL Amministratori AEM]** (per crearli e modificarli) nei livelli **author** e **publish**. Per la procedura completa, consulta [Assegnare un utente a un profilo di prodotto AEM](contentsources.md#assign-product-profile).
 * È stato eseguito il provisioning del profilo di prodotto dell’ambiente in **Adobe Admin Console**.
 
 >[!NOTE]
 >
->Il solo accesso a Cloud Manager non è sufficiente. Per visualizzare o gestire le origini dei contenuti, un utente necessita anche di un profilo di prodotto AEM assegnato al livello di pubblicazione.
+>Il solo accesso a Cloud Manager non è sufficiente. Per visualizzare o gestire le origini di contenuto, un utente necessita anche di un profilo di prodotto AEM assegnato ai livelli di authoring e pubblicazione.
 
 ## Passaggio 1a: collegare un indice esistente {#option-a}
 
@@ -42,9 +40,9 @@ Gli indici esistenti dell’archivio vengono visualizzati automaticamente nell�
 
 1. Accedi a [Cloud Manager](https://my.cloudmanager.adobe.com/), seleziona il programma e apri la scheda **[!UICONTROL Configurazione dell’IA per la gestione dei contenuti]** per l’ambiente da configurare.
 1. Trova l’origine in cui desideri eseguire la ricerca (ad esempio **Pagine**) e seleziona l’icona di blocco. Solo gli utenti con il profilo di prodotto **[!UICONTROL Amministratori AEM]** possono eseguire questa operazione; quelli con il profilo di prodotto **[!UICONTROL Utenti AEM]** possono visualizzare le origini dei contenuti, ma non modificare la loro ricercabilità.
-1. Leggi attentamente la finestra di dialogo **Rendere ricercabile l’origine?** dialogo con attenzione. Si avverte che, una volta reso consultabile, gli elenchi di controllo accesso (ACL) di Apache Oak non saranno applicati a questo indice: qualsiasi utente autenticato potrà recuperare tutti i suoi contenuti. Seleziona **Comprendo che gli elenchi di controllo accesso (ACL) non saranno applicati e che tutti i contenuti di questa origine saranno ricercabili**, quindi seleziona **Rendi ricercabile**.
+1. Leggi attentamente la finestra di dialogo **Rendere ricercabile l’origine?** dialogo con attenzione. Avvisa che gli elenchi di controllo di accesso (ACL) di Apache Oak non vengono applicati per questo indice dopo che è diventato ricercabile. Qualsiasi utente autenticato può recuperare tutti i contenuti. Seleziona **Comprendo che gli elenchi di controllo accesso (ACL) non saranno applicati e che tutti i contenuti di questa origine saranno ricercabili**, quindi seleziona **Rendi ricercabile**.
 1. Conferma le modifiche allo stato in **Disponibile**. Accanto all’origine rimane visualizzata un’icona di avviso a ricordare in modo permanente che per quell’origine gli ACL vengono ignorati.
-1. Esegui una ricerca di prova per verificare che i risultati vengano restituiti correttamente.
+1. Per verificare i risultati, esegui una ricerca di prova.
 
 >[!WARNING]
 >
@@ -52,7 +50,7 @@ Gli indici esistenti dell’archivio vengono visualizzati automaticamente nell�
 
 >[!NOTE]
 >
->Questo percorso è l’ideale se disponi già di un indice con i contenuti del tuo sito, ad esempio i contenuti delle pagine. Utilizza questo indice invece di impostare un meccanismo di ricerca per indicizzazione separato.
+>Usa questo percorso se disponi già di un indice con il contenuto del sito, ad esempio il contenuto della pagina. Utilizza questo indice invece di impostare un meccanismo di ricerca per indicizzazione separato.
 
 ## Passaggio 1b: effettuare una ricerca per indicizzazione in un sito web {#option-b}
 
@@ -77,11 +75,11 @@ Utilizza questo percorso se non disponi già di un indice di ricerca per il sito
    | **Indicizzazione** | Ricerca per indicizzazione e indicizzazione in corso. |
    | **Disponibile** | Indicizzazione completata: pronta per elaborare le query di ricerca. |
 
-1. Seleziona l’icona di **ricerca** accanto all’origine ed esegui una query di prova per verificare che il contenuto sia stato indicizzato correttamente.
+1. Per verificare che il contenuto sia stato indicizzato correttamente, seleziona l&#39;icona **cerca** accanto all&#39;origine ed esegui una query di test.
 
 >[!CAUTION]
 >
->Origine bloccata nell’**[!UICONTROL indicizzazione]**? Riprova innanzitutto l’acquisizione dal menu (...). Se continua a non procedere, verifica che l’indirizzo del sito web sia accessibile al pubblico e che i tuoi pattern **[!UICONTROL Escludi URL]** non stiano filtrando tutte le pagine.
+>Se un&#39;origine rimane in **[!UICONTROL Indicizzazione]**, ritentare prima l&#39;acquisizione dal menu (...). Se continua a non procedere, verifica che l’indirizzo del sito web sia accessibile al pubblico e che i tuoi pattern **[!UICONTROL Escludi URL]** non stiano filtrando tutte le pagine.
 
 ## Passaggio 2: scegliere un componente di ricerca {#choose-component}
 
@@ -99,15 +97,15 @@ Esistono due componenti in grado di inserire elementi di ricerca in una pagina, 
 Se il sito utilizza già il classico componente di ricerca rapida di [!DNL AEM], v3 introduce un pulsante di attivazione/disattivazione **Ricerca IA** che i visitatori possono attivare, senza bisogno di nuovi componenti, proxy oppure origini dei contenuti.
 
 * La ricerca continua a essere eseguita nello stesso percorso JCR/QueryBuilder di oggi: non cambia nulla nel servlet dei risultati né nel modo in cui questi vengono sottoposti a rendering.
-* Quando un visitatore abilita il pulsante di attivazione/disattivazione, il componente antepone alla query un marcatore speciale che la indirizza alla ricerca semantica anziché alla semplice ricerca full-text per parole chiave.
-* Non esiste alcun riepilogo di risposte generative in questo percorso. Migliora la qualità della corrispondenza dell’elenco dei risultati esistenti, non aggiunge una risposta di IA generativa.
+* Quando un visitatore abilita l’interruttore, il componente aggiunge alla query un prefisso con un marcatore speciale che la indirizza alla corrispondenza semantica invece della ricerca full-text per parole chiave semplici.
+* Questo percorso non dispone di un riepilogo di risposte generativo. Migliora la qualità della corrispondenza dell’elenco dei risultati esistenti, non aggiunge una risposta di IA generativa.
 * **Il passaggio 1 (onboarding dell’IA per la gestione dei contenuti) non è applicabile a questo percorso.** Nessuna origine dei contenuti da creare o collegare. Questo componente esegue direttamente le query sull’indice della pagina esistente.
 
 >[!NOTE]
 >
 >Se la ricerca semantica non funziona come previsto dopo l’abilitazione del pulsante di attivazione/disattivazione, crea un ticket di assistenza.
 
-Questo percorso è adatto se desideri un aggiornamento incrementale della ricerca semantica senza adottare un nuovo componente o nuove origini dei contenuti. Se desideri un’esperienza con risposte generative, non è il percorso giusto; a tal fine, utilizza la ricerca con l’IA per la gestione dei contenuti di AEM.
+Usa questo percorso se desideri un aggiornamento della ricerca semantica incrementale senza adottare un nuovo componente o Origini di contenuto. Se desideri un’esperienza di risposta generativa, non è il percorso giusto; a tale scopo utilizza la Ricerca IA Contenuto AEM.
 
 ## Ricerca con l’IA per la gestione dei contenuti di AEM {#gensearch}
 
