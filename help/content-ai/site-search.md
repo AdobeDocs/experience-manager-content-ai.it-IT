@@ -17,10 +17,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 1364d35876ef0fcc502a3d02f8025ee7df067daf
-workflow-type: ht
+source-git-commit: fb7ec4db1f4d90acc88b594de4c3e4ca720be2df
+workflow-type: tm+mt
 source-wordcount: '1458'
-ht-degree: 100%
+ht-degree: 99%
 ---
 
 # Introduzione alla ricerca con il servizio IA gestione contenuti di AEM
@@ -145,5 +145,5 @@ Hai configurato correttamente le funzionalità di ricerca semantica e generativa
 ## Passaggi successivi {#next-steps}
 
 * [Configurare un progetto in Adobe Developer Console](setup-adc-project.md): crea il progetto ADC e le credenziali necessarie per chiamare direttamente l’API dell’IA per la gestione dei contenuti.
-* [Riferimento all’API dell’IA per la gestione dei contenuti](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/contentai/): esegui una query sul contenuto indicizzato utilizzando endpoint di ricerca semantica, generativa o ibrida.
+* [Riferimento all’API dell’IA per la gestione dei contenuti](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentai/): esegui una query sul contenuto indicizzato utilizzando endpoint di ricerca semantica, generativa o ibrida.
 * [Documentazione sui componenti core](https://www.adobe.com/go/aem_cmp_library_it): ulteriori informazioni sui componenti proxy e sui criteri dei modelli.

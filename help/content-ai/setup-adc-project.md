@@ -17,10 +17,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 1364d35876ef0fcc502a3d02f8025ee7df067daf
-workflow-type: ht
+source-git-commit: fb7ec4db1f4d90acc88b594de4c3e4ca720be2df
+workflow-type: tm+mt
 source-wordcount: '714'
-ht-degree: 100%
+ht-degree: 98%
 ---
 
 # Configurare un progetto in Adobe Developer Console {#configure-adc-project}
@@ -126,4 +126,4 @@ AEM Content AI Services supporta due metodi di autenticazione. Scegli quello che
 ## Passaggi successivi {#next-steps}
 
 * [Verifica le origini dei contenuti](contentsources.md): configura un’origine del contenuto in Cloud Manager e attiva l’acquisizione.
-* [Riferimento all’API dell’IA per la gestione dei contenuti](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/contentai/): utilizza il token di accesso o la chiave API per eseguire query sul contenuto indicizzato.
+* [Riferimento all’API dell’IA per la gestione dei contenuti](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentai/): utilizza il token di accesso o la chiave API per eseguire query sul contenuto indicizzato.
