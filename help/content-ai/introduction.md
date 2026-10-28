@@ -17,10 +17,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 1364d35876ef0fcc502a3d02f8025ee7df067daf
-workflow-type: ht
+source-git-commit: fb7ec4db1f4d90acc88b594de4c3e4ca720be2df
+workflow-type: tm+mt
 source-wordcount: '885'
-ht-degree: 100%
+ht-degree: 98%
 ---
 
 # IA per la gestione dei contenuti di AEM: introduzione
@@ -80,4 +80,4 @@ Configura e gestisci le origini IA per la gestione dei contenuti per abilitare l
 
 ## Informazioni sulle API dell’IA per la gestione dei contenuti  {#apis}
 
-Esplora l’ampiezza funzionale dell’IA per la gestione dei contenuti di AEM: le API mostrano tutto il potenziale della piattaforma. Consulta [API dell’IA per la gestione dei contenuti](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/contentai/).
+Esplora l’ampiezza funzionale dell’IA per la gestione dei contenuti di AEM: le API mostrano tutto il potenziale della piattaforma. Consulta [API dell’IA per la gestione dei contenuti](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentai/).
