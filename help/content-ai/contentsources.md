@@ -18,9 +18,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
 source-git-commit: fb7ec4db1f4d90acc88b594de4c3e4ca720be2df
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1671'
-ht-degree: 99%
+ht-degree: 100%
 ---
 
 # Configurare e gestire le origini dell’IA per la gestione dei contenuti
@@ -197,7 +197,7 @@ Per aggiornare la configurazione di un’origine dopo che è stata creata:
 
    ![Finestra di dialogo Modifica origine dell’IA per la gestione dei contenuti con i campi modificabili evidenziati](../assets/content-ai-onboarding-step-12.png)
 
-1. Seleziona **[!UICONTROL Salva]** per applicare le modifiche. L’elenco di origini viene aggiornato in base alle modifiche apportate.
+1. Seleziona **[!UICONTROL Salva]** per applicare le modifiche. L’elenco delle origini viene aggiornato in base alle modifiche apportate.
 
 ### Eliminare un’origine {#delete}
 
